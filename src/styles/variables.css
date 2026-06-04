@@ -1,0 +1,308 @@
+/* ════════════════════════════════════════════════════════════
+   VARIABLES.CSS — Design Token System
+   School Management System
+══════════════════════════════════════════════════════════════ */
+
+/* ── Root tokens (Light Theme defaults) ── */
+:root {
+  /* ── Brand Colors ── */
+  --color-primary          : #2563eb;
+  --color-primary-hover    : #1d4ed8;
+  --color-primary-light    : #eff6ff;
+  --color-primary-border   : #bfdbfe;
+  --color-primary-dark     : #1e3a8a;
+
+  --color-secondary        : #7c3aed;
+  --color-secondary-hover  : #6d28d9;
+  --color-secondary-light  : #f5f3ff;
+  --color-secondary-border : #ddd6fe;
+
+  /* ── Semantic Colors ── */
+  --color-success          : #16a34a;
+  --color-success-hover    : #15803d;
+  --color-success-light    : #dcfce7;
+  --color-success-border   : #bbf7d0;
+
+  --color-warning          : #d97706;
+  --color-warning-hover    : #b45309;
+  --color-warning-light    : #fef9c3;
+  --color-warning-border   : #fde68a;
+
+  --color-danger           : #dc2626;
+  --color-danger-hover     : #b91c1c;
+  --color-danger-light     : #fee2e2;
+  --color-danger-border    : #fecdd3;
+
+  --color-info             : #0284c7;
+  --color-info-hover       : #0369a1;
+  --color-info-light       : #e0f2fe;
+  --color-info-border      : #bae6fd;
+
+  /* ── Neutral / Gray Scale ── */
+  --color-gray-50          : #f8fafc;
+  --color-gray-100         : #f1f5f9;
+  --color-gray-200         : #e2e8f0;
+  --color-gray-300         : #cbd5e1;
+  --color-gray-400         : #94a3b8;
+  --color-gray-500         : #64748b;
+  --color-gray-600         : #475569;
+  --color-gray-700         : #334155;
+  --color-gray-800         : #1e293b;
+  --color-gray-900         : #0f172a;
+
+  /* ── Background Layers ── */
+  --bg-primary             : #ffffff;
+  --bg-secondary           : #f8fafc;
+  --bg-tertiary            : #f1f5f9;
+  --bg-hover               : #f8fafc;
+  --bg-active              : #eff6ff;
+  --bg-card                : #ffffff;
+  --bg-input               : #ffffff;
+  --bg-sidebar             : #0f172a;
+  --bg-modal               : rgba(0, 0, 0, 0.5);
+
+  /* ── Text Colors ── */
+  --text-primary           : #0f172a;
+  --text-secondary         : #475569;
+  --text-muted             : #94a3b8;
+  --text-inverse           : #ffffff;
+  --text-link              : #2563eb;
+  --text-link-hover        : #1d4ed8;
+  --text-placeholder       : #cbd5e1;
+
+  /* ── Border Colors ── */
+  --border-color           : #e2e8f0;
+  --border-strong          : #cbd5e1;
+  --border-focus           : #2563eb;
+  --border-error           : #f87171;
+
+  /* ── Sidebar Tokens ── */
+  --sidebar-width          : 256px;
+  --sidebar-collapsed-width: 72px;
+  --sidebar-bg             : #0f172a;
+  --sidebar-text           : #94a3b8;
+  --sidebar-text-active    : #ffffff;
+  --sidebar-hover          : rgba(255, 255, 255, 0.08);
+  --sidebar-active         : rgba(37, 99, 235, 0.3);
+  --sidebar-border         : rgba(255, 255, 255, 0.06);
+  --sidebar-icon-color     : #64748b;
+
+  /* ── Header / Topbar ── */
+  --header-height          : 64px;
+  --header-bg              : #ffffff;
+  --header-border          : #f1f5f9;
+  --header-shadow          : 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  /* ── Spacing Scale ── */
+  --space-1                : 4px;
+  --space-2                : 8px;
+  --space-3                : 12px;
+  --space-4                : 16px;
+  --space-5                : 20px;
+  --space-6                : 24px;
+  --space-7                : 28px;
+  --space-8                : 32px;
+  --space-10               : 40px;
+  --space-12               : 48px;
+  --space-16               : 64px;
+
+  /* ── Border Radius ── */
+  --radius-sm              : 6px;
+  --radius-md              : 8px;
+  --radius-lg              : 10px;
+  --radius-xl              : 12px;
+  --radius-2xl             : 14px;
+  --radius-3xl             : 16px;
+  --radius-full            : 9999px;
+
+  /* ── Typography ── */
+  --font-family            : 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono              : 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+  --font-size-xs           : 11px;
+  --font-size-sm           : 12px;
+  --font-size-base         : 14px;
+  --font-size-md           : 15px;
+  --font-size-lg           : 16px;
+  --font-size-xl           : 18px;
+  --font-size-2xl          : 20px;
+  --font-size-3xl          : 24px;
+  --font-size-4xl          : 28px;
+  --font-size-5xl          : 32px;
+
+  --font-weight-normal     : 400;
+  --font-weight-medium     : 500;
+  --font-weight-semibold   : 600;
+  --font-weight-bold       : 700;
+  --font-weight-extrabold  : 800;
+  --font-weight-black      : 900;
+
+  --line-height-tight      : 1.25;
+  --line-height-snug       : 1.375;
+  --line-height-normal     : 1.5;
+  --line-height-relaxed    : 1.625;
+  --line-height-loose      : 2;
+
+  --letter-spacing-tight   : -0.025em;
+  --letter-spacing-normal  : 0em;
+  --letter-spacing-wide    : 0.025em;
+  --letter-spacing-wider   : 0.05em;
+  --letter-spacing-widest  : 0.1em;
+
+  /* ── Shadows ── */
+  --shadow-xs              : 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm              : 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md              : 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg              : 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-xl              : 0 20px 60px rgba(0, 0, 0, 0.15);
+  --shadow-2xl             : 0 24px 80px rgba(0, 0, 0, 0.2);
+  --shadow-inner           : inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-primary         : 0 4px 14px rgba(37, 99, 235, 0.4);
+  --shadow-success         : 0 4px 14px rgba(22, 163, 74, 0.35);
+  --shadow-danger          : 0 4px 14px rgba(220, 38, 38, 0.35);
+
+  /* ── Transitions ── */
+  --transition-fast        : 0.1s ease;
+  --transition-base        : 0.15s ease;
+  --transition-slow        : 0.2s ease;
+  --transition-slower      : 0.3s ease;
+  --transition-transform   : transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-Index Stack ── */
+  --z-below                : -1;
+  --z-base                 : 0;
+  --z-raised               : 10;
+  --z-dropdown             : 100;
+  --z-sticky               : 200;
+  --z-overlay              : 400;
+  --z-modal                : 500;
+  --z-popover              : 600;
+  --z-toast                : 700;
+  --z-tooltip              : 800;
+  --z-top                  : 9999;
+
+  /* ── Layout ── */
+  --layout-max-width       : 1440px;
+  --content-max-width      : 1200px;
+  --card-min-width         : 280px;
+  --table-min-width        : 640px;
+
+  /* ── Form Tokens ── */
+  --input-height           : 40px;
+  --input-height-sm        : 32px;
+  --input-height-lg        : 48px;
+  --input-padding-x        : 14px;
+  --input-padding-y        : 10px;
+  --input-border           : 1.5px solid var(--border-color);
+  --input-border-focus     : 1.5px solid var(--color-primary);
+  --input-border-error     : 1.5px solid var(--border-error);
+  --input-border-radius    : var(--radius-md);
+  --input-bg               : var(--bg-input);
+  --input-font-size        : var(--font-size-base);
+
+  /* ── Scrollbar ── */
+  --scrollbar-width        : 6px;
+  --scrollbar-track        : #f1f5f9;
+  --scrollbar-thumb        : #cbd5e1;
+  --scrollbar-thumb-hover  : #94a3b8;
+}
+
+/* ════════════════════════════════════════════════════════════
+   DARK THEME OVERRIDES
+══════════════════════════════════════════════════════════════ */
+[data-theme="dark"] {
+  --color-primary          : #3b82f6;
+  --color-primary-hover    : #2563eb;
+  --color-primary-light    : #1e3a5f;
+  --color-primary-border   : #1e3a8a;
+  --color-primary-dark     : #172554;
+
+  --color-gray-50          : #1e293b;
+  --color-gray-100         : #334155;
+  --color-gray-200         : #475569;
+
+  --bg-primary             : #0f172a;
+  --bg-secondary           : #1e293b;
+  --bg-tertiary            : #334155;
+  --bg-hover               : #1e293b;
+  --bg-active              : #1e3a5f;
+  --bg-card                : #1e293b;
+  --bg-input               : #1e293b;
+  --bg-sidebar             : #020817;
+  --bg-modal               : rgba(0, 0, 0, 0.75);
+
+  --text-primary           : #f1f5f9;
+  --text-secondary         : #94a3b8;
+  --text-muted             : #475569;
+  --text-link              : #60a5fa;
+  --text-link-hover        : #93c5fd;
+  --text-placeholder       : #475569;
+
+  --border-color           : #334155;
+  --border-strong          : #475569;
+
+  --header-bg              : #0f172a;
+  --header-border          : #1e293b;
+  --header-shadow          : 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  --sidebar-text           : #64748b;
+  --sidebar-hover          : rgba(255, 255, 255, 0.05);
+  --sidebar-active         : rgba(59, 130, 246, 0.25);
+  --sidebar-border         : rgba(255, 255, 255, 0.04);
+
+  --shadow-sm              : 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md              : 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg              : 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-xl              : 0 20px 60px rgba(0, 0, 0, 0.6);
+
+  --scrollbar-track        : #1e293b;
+  --scrollbar-thumb        : #334155;
+  --scrollbar-thumb-hover  : #475569;
+}
+
+/* ── Blue Theme ── */
+[data-theme="blue"] {
+  --bg-secondary           : #f0f7ff;
+  --bg-tertiary            : #dbeafe;
+  --bg-active              : #dbeafe;
+  --bg-sidebar             : #1e3a8a;
+  --border-color           : #bfdbfe;
+  --border-strong          : #93c5fd;
+  --color-primary          : #1d4ed8;
+  --color-primary-hover    : #1e40af;
+  --sidebar-text           : #93c5fd;
+  --sidebar-hover          : rgba(255, 255, 255, 0.1);
+  --sidebar-active         : rgba(255, 255, 255, 0.2);
+}
+
+/* ── Green Theme ── */
+[data-theme="green"] {
+  --bg-secondary           : #f0fdf4;
+  --bg-tertiary            : #dcfce7;
+  --bg-active              : #dcfce7;
+  --bg-sidebar             : #14532d;
+  --border-color           : #bbf7d0;
+  --border-strong          : #86efac;
+  --color-primary          : #16a34a;
+  --color-primary-hover    : #15803d;
+  --color-primary-light    : #dcfce7;
+  --sidebar-text           : #86efac;
+  --sidebar-hover          : rgba(255, 255, 255, 0.1);
+  --sidebar-active         : rgba(255, 255, 255, 0.2);
+}
+
+/* ── Purple Theme ── */
+[data-theme="purple"] {
+  --bg-secondary           : #faf5ff;
+  --bg-tertiary            : #ede9fe;
+  --bg-active              : #ede9fe;
+  --bg-sidebar             : #3b0764;
+  --border-color           : #ddd6fe;
+  --border-strong          : #c4b5fd;
+  --color-primary          : #7c3aed;
+  --color-primary-hover    : #6d28d9;
+  --color-primary-light    : #ede9fe;
+  --sidebar-text           : #c4b5fd;
+  --sidebar-hover          : rgba(255, 255, 255, 0.1);
+  --sidebar-active         : rgba(255, 255, 255, 0.2);
+}
